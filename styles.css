@@ -1,0 +1,509 @@
+/* Hero Section */
+.hero {
+  height: 100vh;
+  background: #2A7B9B;
+  background: #aeeeb0;
+background: #aeeeb0;
+background: #77d483;
+background: linear-gradient(0deg, rgba(119, 212, 131, 1) 0%, rgba(138, 219, 237, 1) 52%, rgba(162, 159, 227, 1) 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero-title {
+  font-size: 6rem;
+  font-weight: 600;
+  animation: floatY 2.2s ease-in-out infinite alternate;
+  margin-bottom: 2.5rem;
+  color: #ffffff;
+}
+
+@keyframes floatY {
+  0% {
+    transform: translateY(-18px);
+  }
+  100% {
+    transform: translateY(18px);
+  }
+}
+
+/* Descripción y subtítulo centrados y más abajo */
+.hero-description {
+  margin-top: 6rem;
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+
+.hero-sub {
+  font-size: 1rem;
+  color: #232323;
+  margin-bottom: 2.5rem;
+}
+
+/* Botón principal: "Conocer el Sistema" */
+.btn.btn-primary {
+  background-color: #375a8b;
+  border-color: #7092ff;
+  color: #fff;
+  font-weight: 600;
+  transition: background 0.2s, border 0.2s, transform 0.2s;
+  box-shadow: 0 2px 8px rgba(56, 176, 0, 0.10);
+}
+
+.btn.btn-primary:hover,
+.btn.btn-primary:focus {
+  background-color: #218838;
+  border-color: #218838;
+  color: #fff;
+  transform: translateY(-2px) scale(1.04);
+  box-shadow: 0 6px 18px rgba(56, 176, 0, 0.18);
+}
+
+/* Botón secundario: "Ver Demo" */
+.btn.btn-outline-primary {
+  color: #38b000;
+  border-color: #38b000;
+  background: #fff;
+  font-weight: 600;
+  transition: background 0.2s, color 0.2s, border 0.2s, transform 0.2s;
+}
+
+.btn.btn-outline-primary:hover,
+.btn.btn-outline-primary:focus {
+  background-color: #38b000;
+  color: #fff;
+  border-color: #218838;
+  transform: translateY(-2px) scale(1.04);
+  box-shadow: 0 6px 18px rgba(56, 176, 0, 0.10);
+}
+
+/* Espaciado extra para bajar los botones */
+.d-flex.justify-content-center.gap-3.mt-4 {
+  margin-top: 4rem !important;
+}
+
+
+
+/* Título de la sección */
+.caracteristicas-title {
+  font-size: 3rem;
+  font-weight: 900;
+  letter-spacing: -1px;
+  margin-bottom: 40px;
+}
+
+@media (max-width: 768px) {
+  .caracteristicas-title {
+    font-size: 2.2rem;
+  }
+}
+
+/* Grid de tarjetas */
+.caracteristicas-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 32px;
+}
+
+/* Tarjetas */
+.caracteristica-card {
+  background: #fff;
+  border-radius: 18px;
+  padding: 28px 24px;
+  text-align: left;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  transition: all 0.3s ease;
+  min-height: 220px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.caracteristica-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 28px rgba(14, 165, 233, 0.18); /* Sombra celeste */
+  border-color: #0ea5e9;
+}
+
+/* Título de la tarjeta */
+.caracteristica-card h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+/* Texto de la tarjeta */
+.caracteristica-card p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 0;
+}
+
+
+
+/* Grid de tarjetas */
+.caracteristicas-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 32px;
+}
+
+.caracteristica-card {
+  background: #fff;
+  border: 1.5px solid #e0e0e0;
+  border-radius: 18px;
+  padding: 38px 28px 32px 28px;
+  text-align: left;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+  transition: box-shadow 0.3s, border-color 0.3s;
+  min-height: 220px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* Hover: sombra celeste */
+.caracteristica-card:hover {
+  box-shadow: 0 8px 28px rgba(14, 165, 233, 0.18);
+  border-color: #0ea5e9;
+  transform: translateY(-6px);
+}
+
+/* Ícono grande y colorido */
+.caracteristica-card .icon {
+  font-size: 2.8rem;
+  margin-bottom: 18px;
+  color: #2A7B9B;
+}
+
+/* Título de la tarjeta más grande */
+.caracteristica-card h3 {
+  font-size: 1.35rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+/* Texto de la tarjeta */
+.caracteristica-card p {
+  font-size: 1.08rem;
+  color: #555;
+  margin-bottom: 0;
+}
+
+
+/* Cards de características */
+.caracteristica-card {
+  background: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: start;
+}
+
+.caracteristica-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+  background: #ffffff;
+}
+
+/* Icono a la izquierda */
+.feature-icon img {
+  display: block;
+  width: 40px;
+  height: 40px;
+}
+
+/* Texto dentro de la card */
+.feature-text h3 {
+  font-size: 1.35rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.feature-text p {
+  font-size: 1.08rem;
+  color: #555;
+  margin-bottom: 0;
+}
+
+
+
+/* Título de sección Tecnologias avanzadas */
+#tecnologias h2.fw-bold.mb-3 {
+  font-size: 2rem;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  #tecnologias h2.fw-bold.mb-3 {
+    font-size: 2rem;
+  }
+}
+
+/* Lista de sensores y nuevas funciones */
+.sensor-list {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 20px;
+}
+
+.sensor-list li {
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1rem;
+}
+
+
+/* Sección Cómo Funciona el Sistema */
+#funcionamiento {
+  background: #f9f9f9;
+  padding: 60px 5vw;
+  text-align: center;
+}
+
+/* Título de la sección */
+#funcionamiento h2 {
+  font-size: 3rem;
+  font-weight: 900;
+  margin-bottom: 25px;
+  letter-spacing: -1px;
+}
+
+@media (max-width: 768px) {
+  #funcionamiento h2 {
+    font-size: 2.2rem;
+  }
+}
+
+/* Tarjetas de funcionamiento */
+.func-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+  padding: 25px;
+  min-height: 220px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.func-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+}
+
+/* Número de la tarjeta */
+.func-card .number {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1E3A8A; /* azul profesional */
+  margin-bottom: 10px;
+}
+
+/* Ejemplo de una card en la sección de características */
+.caracteristica-card-ejemplo {
+  background: #fff;
+  border: 1.5px solid #e0e0e0;
+  border-radius: 18px;
+  padding: 38px 28px 32px 28px;
+  text-align: left;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+  transition: box-shadow 0.3s, border-color 0.3s;
+  min-height: 220px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* Icono de ejemplo */
+.caracteristica-card-ejemplo .icon {
+  font-size: 2.8rem;
+  margin-bottom: 18px;
+  color: #2A7B9B;
+}
+
+/* Título de ejemplo */
+.caracteristica-card-ejemplo h3 {
+  font-size: 1.35rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+/* Texto de ejemplo */
+.caracteristica-card-ejemplo p {
+  font-size: 1.08rem;
+  color: #555;
+  margin-bottom: 0;
+}
+
+
+/* Beneficios Tangibles: box degradado */
+.why-system {
+  background: linear-gradient(135deg, #0d6efd, #198754); /* degradado azul-verde */
+  border-radius: 12px;
+  padding: 50px 30px;
+  color: #fff;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.why-system:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.2);
+}
+
+.why-system h3 {
+  font-size: 2rem;
+  font-weight: 900;
+  margin-bottom: 30px;
+}
+
+.why-system h5 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.why-system p {
+  font-size: 1rem;
+  margin-bottom: 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .why-system h3 {
+    font-size: 1.8rem;
+  }
+  .why-system h5 {
+    font-size: 1.2rem;
+  }
+}
+
+
+/* Fondo de la sección */
+#disenado-para {
+  background: linear-gradient(135deg, #a6c3f0, #5fc897);
+  padding: 60px 5vw;
+  text-align: center;
+}
+
+/* Cards pequeñas con efecto borroso */
+.producer-card {
+  background: rgba(255, 255, 255, 0.1); /* fondo semitransparente */
+  backdrop-filter: blur(8px); /* efecto frosted glass */
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 15px;
+  padding: 25px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.producer-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 28px rgba(0,0,0,0.2);
+}
+
+/* Cards grandes */
+.producer-card-large {
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 15px;
+  padding: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.producer-card-large:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 32px rgba(0,0,0,0.25);
+}
+
+.producer-card h4, .producer-card-large h5 {
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.producer-card p, .producer-card-large ul {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* Listas de la card grande */
+.producer-card-large ul {
+  padding-left: 20px;
+  text-align: left;
+}
+
+.producer-card-large ul li {
+  margin-bottom: 8px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .producer-card-large {
+    flex-direction: column;
+  }
+  .producer-card-large > div {
+    margin: 10px 0;
+  }
+}
+
+
+/* Footer */
+.footer {
+  background-color: #21252c;
+  color: #90a8ab;
+  padding: 40px 5vw;
+  font-family: 'Arial', sans-serif;
+}
+
+.footer-left .footer-logo {
+  color: #2591c0;
+  font-size: 1.8rem;
+  font-weight: 900;
+  margin-bottom: 5px;
+}
+
+.footer-left .footer-desc {
+  color: #90a8ab;
+  font-size: 1rem;
+  margin: 0;
+}
+
+.footer-right p {
+  color: #90a8ab;
+  font-size: 0.95rem;
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer {
+    text-align: center;
+  }
+  .footer-right {
+    text-align: center;
+  }
+}
+
+
+
+/* Fuente profesional y un poco más bold para el logo del navbar */
+.navbar-title {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #ffffff;
+}
